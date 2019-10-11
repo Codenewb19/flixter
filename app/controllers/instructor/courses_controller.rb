@@ -15,11 +15,6 @@ class Instructor::CoursesController < ApplicationController
   end
 end
 
-  def new
-    u = User.new
-    u.image = params[:file] 
-  end  
-
   def show
     @course = Course.new
   end
