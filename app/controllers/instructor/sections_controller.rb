@@ -6,6 +6,7 @@ class Instructor::SectionsController < ApplicationController
   end
 
   def create
+    byebug
     @section = current_course.sections.create(section_params)
     redirect_to instructor_course_path(current_course)
   end
@@ -24,6 +25,6 @@ class Instructor::SectionsController < ApplicationController
   end
 
   def section_params
-    params.require(:section).permit(:title)
+    params.require(:section).permit(:title, :row_order_rank)
   end
 end
