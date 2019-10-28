@@ -1,8 +1,4 @@
 <script>
- alert('hi');
-</script>
-
-<script>
   $(function() {
     $('.lessons').sortable({
       update: function( event, ui ) {
@@ -45,7 +41,7 @@
 
   <ul class= "sections">
     <% current_course.sections.rank(:row_order).each do |section| %>
-      <li data-update-url="<%= instructor_lesson_path(lesson) %>" class= "section-li">
+      <li data-update-url="<%= instructor_section_path(section) %>" class= "section-li">
         <div class="header"> 
           <span class="fa fa-ellipsis-v"></span>
           <%= section.title %>
