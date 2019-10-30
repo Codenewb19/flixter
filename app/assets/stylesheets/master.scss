@@ -12,6 +12,17 @@ h1, h2, h3, h4, h5, h6, .navbar {
   background: image_url('tree_bark.png');
   }
 
+.navbar-inverse .navbar-nav .nav-link {
+    color: #337FC1;
+}
+.navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+}
+.nav-link {
+    display: block;
+    padding: 0.5em 1em;
+}
 .navbar-inverse a.navbar-brand {
   font-family: 'nobileregular';
   font-weight: 600;
